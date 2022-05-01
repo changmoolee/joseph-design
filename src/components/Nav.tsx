@@ -13,8 +13,8 @@ const Nav = () => {
   const items = Array(10).fill(0);
   return (
     <div css={contaniner}>
-      {items.map((item) => (
-        <Item />
+      {items.map((item, index) => (
+        <Item key={index} />
       ))}
     </div>
   );

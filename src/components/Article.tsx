@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React from "react";
+import ModalDescription from "../features/Modal/ModalDescription";
 
 const container = css`
   display: flex;
@@ -9,7 +10,12 @@ const container = css`
 `;
 
 const Article = () => {
-  return <div css={container}>Article</div>;
+  return (
+    <div css={container}>
+      Article
+      <ModalDescription />
+    </div>
+  );
 };
 
 export default Article;
