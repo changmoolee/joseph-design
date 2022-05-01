@@ -1,7 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import ModalDescription from "../features/Modal/ModalDescription";
+import Intro from "./Intro";
 
 const container = css`
   display: flex;
@@ -12,8 +14,10 @@ const container = css`
 const Article = () => {
   return (
     <div css={container}>
-      Article
-      <ModalDescription />
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/Modal" element={<ModalDescription />} />
+      </Routes>
     </div>
   );
 };

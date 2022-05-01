@@ -39,12 +39,12 @@ const description = css`
   padding-top: 30px;
 `;
 
-type OpenProps = {
+type ModalProps = {
   isOpen: boolean;
   handleClose: () => void;
 };
 
-const ModalDemo = ({ isOpen, handleClose }: OpenProps) => {
+const ModalDemo = ({ isOpen, handleClose }: ModalProps) => {
   return isOpen ? (
     <>
       <div css={dim} />

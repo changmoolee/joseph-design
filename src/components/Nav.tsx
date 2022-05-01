@@ -9,12 +9,13 @@ const contaniner = css`
   border: 1px solid black;
 `;
 
+const features = ["Modal", "Tabs"];
+
 const Nav = () => {
-  const items = Array(10).fill(0);
   return (
     <div css={contaniner}>
-      {items.map((item, index) => (
-        <Item key={index} />
+      {features.map((feature) => (
+        <Item key={feature} feature={feature} />
       ))}
     </div>
   );

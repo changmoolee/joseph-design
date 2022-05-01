@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const container = css`
   width: 100%;
@@ -8,8 +9,16 @@ const container = css`
   border: 1px solid black;
 `;
 
-const Item = () => {
-  return <div css={container}>Item</div>;
+interface ItemProps {
+  feature: string;
+}
+
+const Item = ({ feature }: ItemProps) => {
+  return (
+    <Link to={`${feature}`}>
+      <div css={container}>{feature}</div>
+    </Link>
+  );
 };
 
 export default Item;
