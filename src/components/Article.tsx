@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import ModalDescription from "../features/Modal/ModalDescription";
 import TabsDescription from "../features/Tabs/TabsDescription";
 import TagDescription from "../features/Tag/TagDescription";
+import ToggleDescription from "../features/Toggle/ToggleDescription";
 import Intro from "./Intro";
 
 const container = css`
@@ -21,6 +22,7 @@ const Article = () => {
         <Route path="/Modal" element={<ModalDescription />} />
         <Route path="/Tabs" element={<TabsDescription />} />
         <Route path="/Tag" element={<TagDescription />} />
+        <Route path="/Toggle" element={<ToggleDescription />} />
       </Routes>
     </div>
   );
