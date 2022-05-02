@@ -8,11 +8,9 @@ const ModalDescription = () => {
 
   const handleClose = () => {
     setIsOpen(false);
-    console.log("close");
   };
   const handleOpen = () => {
     setIsOpen(true);
-    console.log("open");
   };
 
   return (

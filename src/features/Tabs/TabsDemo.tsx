@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import React, { useState } from "react";
 
 const box = css`
-  width: 300px;
+  width: 400px;
   height: 50px;
   display: flex;
   background-color: #2f568a;
@@ -34,9 +34,11 @@ const text = css`
   opacity: 0.5;
 `;
 
-const tabs = ["tab1", "tab2", "tab3"];
+type TabsProps = {
+  tabs: Array<string>;
+};
 
-const TabsDemo = () => {
+const TabsDemo = ({ tabs }: TabsProps) => {
   const [clicked, setClicked] = useState<number>(tabs.length);
 
   const onClick = (index: number) => {
