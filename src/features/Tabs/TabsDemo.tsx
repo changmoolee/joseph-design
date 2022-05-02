@@ -41,7 +41,7 @@ type TabsProps = {
 const TabsDemo = ({ tabs }: TabsProps) => {
   const [clicked, setClicked] = useState<number>(tabs.length);
 
-  const onClick = (index: number) => {
+  const handleClick = (index: number) => {
     setClicked(index);
   };
 
@@ -51,7 +51,7 @@ const TabsDemo = ({ tabs }: TabsProps) => {
         <div
           key={tab}
           css={item(clicked, index)}
-          onClick={() => onClick(index)}
+          onClick={() => handleClick(index)}
         >
           <span css={text}>{tab}</span>
         </div>

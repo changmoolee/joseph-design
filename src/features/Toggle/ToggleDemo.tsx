@@ -29,12 +29,12 @@ type ToggleProps = {
 const ToggleDemo = ({ height }: ToggleProps) => {
   const [toggleOn, setToggleOn] = useState<boolean>(false);
 
-  const onClick = () => {
+  const handleClick = () => {
     setToggleOn((toggleOn) => !toggleOn);
   };
 
   return (
-    <div css={container(height, toggleOn)} onClick={onClick}>
+    <div css={container(height, toggleOn)} onClick={handleClick}>
       <div />
     </div>
   );
