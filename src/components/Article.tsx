@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ModalDescription from "../features/Modal/ModalDescription";
+import TabsDescription from "../features/Tabs/TabsDescription";
 import Intro from "./Intro";
 
 const container = css`
@@ -17,6 +18,7 @@ const Article = () => {
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="/Modal" element={<ModalDescription />} />
+        <Route path="/Tabs" element={<TabsDescription />} />
       </Routes>
     </div>
   );
