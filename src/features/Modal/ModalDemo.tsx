@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React, { useState } from "react";
-import CloseIcon from "@mui/icons-material/Close";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 const dim = css`
   position: fixed;
@@ -50,7 +50,7 @@ const ModalDemo = ({ isOpen, handleClose }: ModalProps) => {
       <div css={dim} />
       <section css={box}>
         <div css={closeBox} onClick={handleClose}>
-          <CloseIcon />
+          <FontAwesomeIcon icon={faCircleXmark} />
         </div>
         <div css={title}>
           <strong>Modal title is here.</strong>
