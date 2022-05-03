@@ -9,7 +9,7 @@ const contaniner = css`
   border: 1px solid black;
 `;
 
-const features = ["Modal", "Tabs", "Tag", "Toggle"];
+const features = ["Modal", "Tabs", "Tag", "Toggle", "AutoComplete"];
 
 const Nav = () => {
   return (
