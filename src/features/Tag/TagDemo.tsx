@@ -58,11 +58,11 @@ const TagDemo = ({ tags, setTags }: TagProps) => {
     setTags((tags) => tags.filter((_, index) => index !== toBeDeleted));
   };
 
-  const onChange = (event: any) => {
+  const handleChange = (event: any) => {
     setInputValue(event.target.value);
   };
 
-  const onKeyPress = (event: any) => {
+  const handleKeyPress = (event: any) => {
     if (event.key === "Enter") {
       addTag(inputValue);
     }
@@ -83,8 +83,8 @@ const TagDemo = ({ tags, setTags }: TagProps) => {
       <input
         css={input}
         value={inputValue}
-        onChange={(e) => onChange(e)}
-        onKeyPress={onKeyPress}
+        onChange={(e) => handleChange(e)}
+        onKeyPress={handleKeyPress}
         maxLength={10}
         placeholder="Please enter a tag name."
       />
