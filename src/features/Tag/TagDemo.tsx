@@ -38,7 +38,7 @@ const item = css`
   white-space: nowrap;
 `;
 type TagProps = {
-  tags: Array<string>;
+  tags: string[];
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
 };
 

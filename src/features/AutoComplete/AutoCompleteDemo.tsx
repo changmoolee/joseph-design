@@ -44,7 +44,7 @@ const suggestion = css`
   }
 `;
 type AutoCompleteProps = {
-  items: Array<string>;
+  items: string[];
 };
 
 const AutoCompleteDemo = ({ items }: AutoCompleteProps) => {

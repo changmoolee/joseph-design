@@ -35,7 +35,7 @@ const text = css`
 `;
 
 type TabsProps = {
-  tabs: Array<string>;
+  tabs: string[];
 };
 
 const TabsDemo = ({ tabs }: TabsProps) => {
