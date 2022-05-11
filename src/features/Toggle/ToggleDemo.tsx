@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React, { useState } from "react";
+import { useState } from "react";
+import { darkColor, lightColor } from "../../styled";
 
 const container = (height: number, toggleOn: boolean) => {
   return css`
@@ -10,7 +11,7 @@ const container = (height: number, toggleOn: boolean) => {
     align-items: center;
     padding: ${height / 10}px;
     border-radius: ${height / 1.5}px;
-    background-color: ${toggleOn ? "#2f568a" : "#569eff"};
+    background-color: ${toggleOn ? darkColor : lightColor};
     div {
       width: ${height}px;
       height: ${height}px;

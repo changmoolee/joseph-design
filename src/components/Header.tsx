@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React from "react";
+import { mainColor } from "../styled";
 
 const container = css`
   width: 100%;
   height: 100px;
-  border: 1px solid black;
+  background-color: ${mainColor};
 `;
 
 const Header = () => {
