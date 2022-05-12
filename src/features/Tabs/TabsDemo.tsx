@@ -1,12 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React, { useState } from "react";
+import { useState } from "react";
+import { darkColor, lightColor } from "../../styled";
 
 const box = css`
   width: 400px;
   height: 50px;
   display: flex;
-  background-color: #2f568a;
+  background-color: ${darkColor};
 `;
 const item = (clicked: number, index: number) => {
   return css`
@@ -14,13 +15,13 @@ const item = (clicked: number, index: number) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: ${clicked === index ? "4px solid #569eff" : null};
+    border-bottom: ${clicked === index ? `4px solid ${lightColor}` : null};
     span {
       margin-bottom: ${clicked === index ? "-4px" : "0"};
       opacity: ${clicked === index ? "1" : "0.5"};
     }
     :hover {
-      border-bottom: 4px solid #569eff;
+      border-bottom: 4px solid ${lightColor};
       span {
         margin-bottom: -4px;
         opacity: 1;
@@ -35,7 +36,7 @@ const text = css`
 `;
 
 type TabsProps = {
-  tabs: Array<string>;
+  tabs: string[];
 };
 
 const TabsDemo = ({ tabs }: TabsProps) => {

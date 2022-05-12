@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { lightColor } from "../../styled";
 
 const box = css`
   width: 500px;
@@ -31,14 +32,14 @@ const item = css`
   align-items: center;
   padding: 5px;
   margin: 0 5px;
-  background-color: #4b89dc;
+  background-color: ${lightColor};
   border-radius: 10px;
   color: white;
   box-sizing: border-box;
   white-space: nowrap;
 `;
 type TagProps = {
-  tags: Array<string>;
+  tags: string[];
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
 };
 

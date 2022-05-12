@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 
@@ -44,7 +44,7 @@ const suggestion = css`
   }
 `;
 type AutoCompleteProps = {
-  items: Array<string>;
+  items: string[];
 };
 
 const AutoCompleteDemo = ({ items }: AutoCompleteProps) => {

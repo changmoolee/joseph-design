@@ -8,3 +8,11 @@ export const descContainer = css`
   justify-content: center;
   align-items: center;
 `;
+
+export const lightColor = "#569eff";
+
+export const mainColor = "#7FB5FF";
+
+export const darkColor = "#001D6E";
+
+export const subColor = "#FEE2C5";
