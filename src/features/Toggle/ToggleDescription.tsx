@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React from "react";
 import { descContainer } from "../../styled";
 import ToggleDemo from "./ToggleDemo";
 

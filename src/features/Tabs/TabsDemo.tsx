@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { darkColor, lightColor } from "../../styled";
 
 const box = css`

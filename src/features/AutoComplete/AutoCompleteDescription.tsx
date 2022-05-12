@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import React from "react";
 import { descContainer } from "../../styled";
 import AutoCompleteDemo from "./AutoCompleteDemo";
 

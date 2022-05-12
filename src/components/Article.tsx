@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AutoCompleteDescription from "../features/AutoComplete/AutoCompleteDescription";
 import ModalDescription from "../features/Modal/ModalDescription";
