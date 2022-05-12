@@ -7,7 +7,15 @@ const contaniner = css`
   height: 100%;
 `;
 
-const features = ["Modal", "Tabs", "Tag", "Toggle", "AutoComplete", "Dropdown"];
+const features = [
+  "Modal",
+  "Tabs",
+  "Tag",
+  "Toggle",
+  "AutoComplete",
+  "Dropdown",
+  "Drawer",
+];
 
 const Nav = () => {
   return (

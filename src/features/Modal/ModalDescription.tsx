@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { useState } from "react";
-import ModalDemo from "./ModalDemo";
 import { descContainer, mainColor, darkColor } from "../../styled";
+import ModalDemo from "./ModalDemo";
 
 const style = {
   button: css`
