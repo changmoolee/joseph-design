@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import Item from "./Item";
 
 const contaniner = css`
-  width: 300px;
+  min-width: 300px;
   height: 100%;
 `;
 
@@ -15,6 +15,7 @@ const features = [
   "AutoComplete",
   "Dropdown",
   "Drawer",
+  "Toast",
 ];
 
 const Nav = () => {
