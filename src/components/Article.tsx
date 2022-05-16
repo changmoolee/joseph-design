@@ -2,6 +2,7 @@
 import { css } from "@emotion/react";
 import { Routes, Route } from "react-router-dom";
 import AutoCompleteDescription from "../features/AutoComplete/AutoCompleteDescription";
+import DrawerDescription from "../features/Drawer/DrawerDescription";
 import DropDownDescription from "../features/DropDown/DropDownDescription";
 import ModalDescription from "../features/Modal/ModalDescription";
 import TabsDescription from "../features/Tabs/TabsDescription";
@@ -26,6 +27,7 @@ const Article = () => {
         <Route path="/Toggle" element={<ToggleDescription />} />
         <Route path="/AutoComplete" element={<AutoCompleteDescription />} />
         <Route path="/DropDown" element={<DropDownDescription />} />
+        <Route path="/Drawer" element={<DrawerDescription />} />
       </Routes>
     </div>
   );
