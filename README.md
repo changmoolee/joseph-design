@@ -43,3 +43,14 @@ input창에 텍스트를 입력하면, 동일한 자모음 혹은 알파벳을 �
 부모 컴포넌트의 width, height 속성으로 크기를, display 속성으로 구조를 결정할 수 있습니다.<br>
 props는 총 3개로 title, dropDownItems, dropDownWidth가 있습니다.<br>
 title은 tab부분의 이름, dropDownItems는 DropDown에 들어갈 item 이름들, dropDownWidth는 DropDown의 넒이를 결정합니다.<br><br>
+### Drawer 기능
+![Drawer](https://user-images.githubusercontent.com/84559872/168035517-eaf83662-58c2-4fa1-900a-b35531c0eab6.gif)<br>
+뱡향 이름을 가진 버튼을 누르면, 해당 방향에서 Drawer가 구현됩니다.<br>
+props로 버튼의 이름을 수정할 수 있는 title, 높이 및 넒이를 지정할 수 있는 height, width가 존재합니다.<br>
+또한, 해당 Drawer 내에 자식 컴포넌트를 내려 줄 수 있는 children이 존재합니다.<br><br>
+### Toast 기능
+![Toast](https://user-images.githubusercontent.com/84559872/168588538-9b711b55-dc8e-498c-84ca-2907b21ec410.gif)<br>
+slideToast 버튼을 누르면, 우측 아래에서 Toast가 미끄러지면서 구현됩니다.<br>
+positionedToast 버튼을 누르면, 중앙 아래 부분에서 Toast가 구현됩니다.<br>
+props로 Toast의 내용을 수정할 수 있는 description, 색상을 정하는 color, 폭을 지정할 수 있는 width가 존재합니다.<br>
+해당 Toast 기능을 이용하기 위해서는 open props에 Toast 구현 유무를 정하는 상태값을 내려줘야 합니다.  ex) open={open}<br><br>
