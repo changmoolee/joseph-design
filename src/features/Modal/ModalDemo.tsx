@@ -40,16 +40,16 @@ const description = css`
 `;
 
 type ModalProps = {
-  isOpen: boolean;
-  handleClose: () => void;
+  open: boolean;
+  onClose: () => void;
 };
 
-const ModalDemo = ({ isOpen, handleClose }: ModalProps) => {
-  return isOpen ? (
+const ModalDemo = ({ open, onClose }: ModalProps) => {
+  return open ? (
     <>
       <div css={dim} />
       <section css={box}>
-        <div css={closeBox} onClick={handleClose}>
+        <div css={closeBox} onClick={onClose}>
           <FontAwesomeIcon icon={faCircleXmark} />
         </div>
         <div css={title}>
