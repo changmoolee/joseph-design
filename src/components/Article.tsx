@@ -8,6 +8,7 @@ import ModalDescription from "../features/Modal/ModalDescription";
 import TabsDescription from "../features/Tabs/TabsDescription";
 import TagDescription from "../features/Tag/TagDescription";
 import ToggleDescription from "../features/Toggle/ToggleDescription";
+import ToastDescription from "../features/Toast/ToastDescription";
 import Intro from "./Intro";
 
 const container = css`
@@ -28,6 +29,7 @@ const Article = () => {
         <Route path="/AutoComplete" element={<AutoCompleteDescription />} />
         <Route path="/DropDown" element={<DropDownDescription />} />
         <Route path="/Drawer" element={<DrawerDescription />} />
+        <Route path="/Toast" element={<ToastDescription />} />
       </Routes>
     </div>
   );
