@@ -24,9 +24,9 @@ https://joseph-design.netlify.app/
 onClose에는 Modal을 소거할 setState(false)를 내려주어야 합니다. <br>
 ### Tabs 기능<br>
 ![tabs](https://user-images.githubusercontent.com/84559872/166253828-35796ab5-dfbf-43c9-ad7e-aab6b4a461fe.gif)<br>
-마우스로 tab을 hover시 tab의 border-bottom이 형성되며 텍스트는 opacity가 1이 되어 선명해집니다.<br>
-클릭 시, 클릭한 탭의 border-bottom이 형성되고 텍스트 opacity가 1로 유지됩니다.<br><br>
-각 tab들에 이름을 부여하기 위해서는 props로 tabs에 문자열 배열로 내려주어야 합니다.<br><br>
+마우스로 Tab을 hover시 Tab의 border-bottom이 형성되며 텍스트는 opacity가 1이 되어 선명해집니다.<br>
+클릭 시, 클릭한 Tab의 border-bottom이 형성되고 텍스트 opacity가 1로 유지됩니다.<br><br>
+각 Tab들에 이름을 부여하기 위해서는 props로 tabs에 문자열 배열로 내려주어야 합니다.<br><br>
 ### Tag 기능<br>
 ![tag](https://user-images.githubusercontent.com/84559872/166254655-9496d01c-facc-488b-a50d-11323607685b.gif)<br>
 input에 텍스트를 입력하고 enter키를 누르면 tag가 생성됩니다.<br>
