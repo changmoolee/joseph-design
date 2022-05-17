@@ -16,6 +16,7 @@ const features = [
   "Dropdown",
   "Drawer",
   "Toast",
+  "SkeletonUI",
 ];
 
 const Nav = () => {

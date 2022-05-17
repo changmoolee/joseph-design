@@ -32,7 +32,7 @@ const ModalDescription = () => {
 
   return (
     <div css={descContainer}>
-      <ModalDemo isOpen={isOpen} handleClose={handleClose} />
+      <ModalDemo open={isOpen} onClose={handleClose} />
       <button css={style.button} onClick={handleOpen}>
         modal
       </button>

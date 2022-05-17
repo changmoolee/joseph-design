@@ -10,6 +10,7 @@ import TagDescription from "../features/Tag/TagDescription";
 import ToggleDescription from "../features/Toggle/ToggleDescription";
 import ToastDescription from "../features/Toast/ToastDescription";
 import Intro from "./Intro";
+import SkeletonUIDescription from "../features/SkeletonUI/SkeletonUIDescription";
 
 const container = css`
   display: flex;
@@ -30,6 +31,7 @@ const Article = () => {
         <Route path="/DropDown" element={<DropDownDescription />} />
         <Route path="/Drawer" element={<DrawerDescription />} />
         <Route path="/Toast" element={<ToastDescription />} />
+        <Route path="/SkeletonUI" element={<SkeletonUIDescription />} />
       </Routes>
     </div>
   );
