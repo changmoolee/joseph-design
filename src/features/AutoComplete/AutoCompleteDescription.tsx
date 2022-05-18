@@ -1,14 +1,17 @@
 /** @jsxImportSource @emotion/react */
-import { descContainer } from "../../styled";
+import { layout, feature, description } from "../../styled";
 import AutoCompleteDemo from "./AutoCompleteDemo";
 
 const AutoCompleteDescription = () => {
   const items = ["apple", "butter", "banana", "orange"];
 
   return (
-    <div css={descContainer}>
-      <AutoCompleteDemo items={items} />
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <AutoCompleteDemo items={items} />
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 

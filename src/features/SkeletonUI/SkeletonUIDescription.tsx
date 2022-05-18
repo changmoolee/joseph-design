@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { descContainer } from "../../styled";
+import { layout, feature, description } from "../../styled";
 import SkeletonUIDemo from "./SkeletonUIDemo";
 
-const layout = css`
+const skeletons = css`
   width: 500px;
   height: 500px;
   display: grid;
@@ -33,22 +33,25 @@ const circleExample = css`
 
 const SkeletonUIDescription = () => {
   return (
-    <div css={descContainer}>
-      <section css={layout}>
-        Rectangle :
-        <SkeletonUIDemo>
-          <div css={rectangleExample}></div>
-        </SkeletonUIDemo>
-        Square :
-        <SkeletonUIDemo>
-          <div css={squareExample}></div>
-        </SkeletonUIDemo>
-        Circle :
-        <SkeletonUIDemo>
-          <div css={circleExample}></div>
-        </SkeletonUIDemo>
-      </section>
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <section css={skeletons}>
+          Rectangle :
+          <SkeletonUIDemo>
+            <div css={rectangleExample}></div>
+          </SkeletonUIDemo>
+          Square :
+          <SkeletonUIDemo>
+            <div css={squareExample}></div>
+          </SkeletonUIDemo>
+          Circle :
+          <SkeletonUIDemo>
+            <div css={circleExample}></div>
+          </SkeletonUIDemo>
+        </section>
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 

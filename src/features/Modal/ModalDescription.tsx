@@ -1,7 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { useState } from "react";
-import { descContainer, mainColor, darkColor } from "../../styled";
+import {
+  layout,
+  feature,
+  description,
+  mainColor,
+  darkColor,
+} from "../../styled";
 import ModalDemo from "./ModalDemo";
 
 const style = {
@@ -31,12 +37,15 @@ const ModalDescription = () => {
   };
 
   return (
-    <div css={descContainer}>
-      <ModalDemo open={isOpen} onClose={handleClose} />
-      <button css={style.button} onClick={handleOpen}>
-        modal
-      </button>
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <ModalDemo open={isOpen} onClose={handleClose} />
+        <button css={style.button} onClick={handleOpen}>
+          modal
+        </button>
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 

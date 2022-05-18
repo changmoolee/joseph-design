@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { descContainer } from "../../styled";
+import { layout, feature, description } from "../../styled";
 import TopDrawerDemo from "./TopDrawerDemo";
 import RightDrawerDemo from "./RightDrawerDemo";
 import BottomDrawerDemo from "./BottomDrawerDemo";
@@ -14,20 +14,23 @@ export interface DrawerProps extends React.HTMLAttributes<any> {
 
 const DrawerDescription = () => {
   return (
-    <div css={descContainer}>
-      <TopDrawerDemo title="TopDrawer" height={300}>
-        {children}
-      </TopDrawerDemo>
-      <RightDrawerDemo title="RightDrawer" width={100}>
-        {children}
-      </RightDrawerDemo>
-      <BottomDrawerDemo title="BottomDrawer" height={200}>
-        {children}
-      </BottomDrawerDemo>
-      <LeftDrawerDemo title="LefttDrawer" width={300}>
-        {children}
-      </LeftDrawerDemo>
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <TopDrawerDemo title="TopDrawer" height={300}>
+          {children}
+        </TopDrawerDemo>
+        <RightDrawerDemo title="RightDrawer" width={100}>
+          {children}
+        </RightDrawerDemo>
+        <BottomDrawerDemo title="BottomDrawer" height={200}>
+          {children}
+        </BottomDrawerDemo>
+        <LeftDrawerDemo title="LefttDrawer" width={300}>
+          {children}
+        </LeftDrawerDemo>
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 
