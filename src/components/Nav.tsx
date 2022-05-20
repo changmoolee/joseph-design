@@ -8,15 +8,15 @@ const contaniner = css`
 `;
 
 const features = [
-  "Modal",
-  "Tabs",
-  "Tag",
-  "Toggle",
-  "AutoComplete",
-  "Dropdown",
-  "Drawer",
-  "Toast",
-  "SkeletonUI",
+  "modal",
+  "tabs",
+  "tag",
+  "toggle",
+  "autoComplete",
+  "dropdown",
+  "drawer",
+  "toast",
+  "skeletonui",
 ];
 
 const Nav = () => {

@@ -21,15 +21,15 @@ const Article = () => {
   return (
     <div css={container}>
       <Routes>
-        <Route path="/Modal" element={<ModalDescription />} />
-        <Route path="/Tabs" element={<TabsDescription />} />
-        <Route path="/Tag" element={<TagDescription />} />
-        <Route path="/Toggle" element={<ToggleDescription />} />
-        <Route path="/AutoComplete" element={<AutoCompleteDescription />} />
-        <Route path="/DropDown" element={<DropDownDescription />} />
-        <Route path="/Drawer" element={<DrawerDescription />} />
-        <Route path="/Toast" element={<ToastDescription />} />
-        <Route path="/SkeletonUI" element={<SkeletonUIDescription />} />
+        <Route path="/modal" element={<ModalDescription />} />
+        <Route path="/tabs" element={<TabsDescription />} />
+        <Route path="/tag" element={<TagDescription />} />
+        <Route path="/toggle" element={<ToggleDescription />} />
+        <Route path="/autoComplete" element={<AutoCompleteDescription />} />
+        <Route path="/dropDown" element={<DropDownDescription />} />
+        <Route path="/drawer" element={<DrawerDescription />} />
+        <Route path="/toast" element={<ToastDescription />} />
+        <Route path="/skeletonui" element={<SkeletonUIDescription />} />
       </Routes>
     </div>
   );
