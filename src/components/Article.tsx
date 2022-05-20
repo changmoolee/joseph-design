@@ -9,7 +9,6 @@ import TabsDescription from "../features/Tabs/TabsDescription";
 import TagDescription from "../features/Tag/TagDescription";
 import ToggleDescription from "../features/Toggle/ToggleDescription";
 import ToastDescription from "../features/Toast/ToastDescription";
-import Intro from "./Intro";
 import SkeletonUIDescription from "../features/SkeletonUI/SkeletonUIDescription";
 
 const container = css`
@@ -22,7 +21,6 @@ const Article = () => {
   return (
     <div css={container}>
       <Routes>
-        <Route path="/" element={<Intro />} />
         <Route path="/Modal" element={<ModalDescription />} />
         <Route path="/Tabs" element={<TabsDescription />} />
         <Route path="/Tag" element={<TagDescription />} />
