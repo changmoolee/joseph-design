@@ -10,6 +10,7 @@ import TagDescription from "../features/Tag/TagDescription";
 import ToggleDescription from "../features/Toggle/ToggleDescription";
 import ToastDescription from "../features/Toast/ToastDescription";
 import SkeletonUIDescription from "../features/SkeletonUI/SkeletonUIDescription";
+import FeatureIntro from "../features/FeatureIntro";
 
 const container = css`
   display: flex;
@@ -21,6 +22,7 @@ const Article = () => {
   return (
     <div css={container}>
       <Routes>
+        <Route path="/intro" element={<FeatureIntro />} />
         <Route path="/modal" element={<ModalDescription />} />
         <Route path="/tabs" element={<TabsDescription />} />
         <Route path="/tag" element={<TagDescription />} />

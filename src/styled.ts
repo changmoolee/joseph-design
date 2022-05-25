@@ -20,12 +20,16 @@ export const feature = css`
 export const description = css`
   width: 50%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
 `;
 
-export const lightColor = "#569eff";
+export const lightColor = "#51d3ff";
 
-export const mainColor = "#7FB5FF";
+export const mainColor = "#50C1E9";
 
-export const darkColor = "#001D6E";
+export const darkColor = "#327e9b";
 
-export const subColor = "#FEE2C5";
+export const subColor = "#5BE7C4";

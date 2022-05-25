@@ -9,7 +9,6 @@ const container = css`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
 `;
 
 const Main = () => {
