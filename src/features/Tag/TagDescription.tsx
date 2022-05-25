@@ -1,15 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { useState } from "react";
 import TagDemo from "./TagDemo";
-import { descContainer } from "../../styled";
+import { layout, feature, description } from "../../styled";
 
 const TagDescription = () => {
   const [tags, setTags] = useState<Array<string>>([]);
 
   return (
-    <div css={descContainer}>
-      <TagDemo tags={tags} setTags={setTags} />
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <TagDemo tags={tags} setTags={setTags} />
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 

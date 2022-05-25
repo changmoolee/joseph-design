@@ -1,15 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { descContainer } from "../../styled";
+import { layout, feature, description } from "../../styled";
 import ToggleDemo from "./ToggleDemo";
 
 const ToggleDescription = () => {
   const height = 50;
 
   return (
-    <div css={descContainer}>
-      <ToggleDemo height={height} />
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <ToggleDemo height={height} />
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 

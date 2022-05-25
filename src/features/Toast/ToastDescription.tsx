@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { descContainer, lightColor } from "../../styled";
+import { layout, feature, description, lightColor } from "../../styled";
 import { useState } from "react";
 import SlideToastDemo from "./SlideToastDemo";
 import PositionedToastDemo from "./PositionedToastDemo";
@@ -37,28 +37,31 @@ const ToastDescription = () => {
   };
 
   return (
-    <div css={descContainer}>
-      <button css={button} onClick={slideToastOpen}>
-        slideToast
-      </button>
-      <button css={button} onClick={positionedToastOpen}>
-        positionedToast
-      </button>
-      <SlideToastDemo
-        width={200}
-        description="slide Toast!"
-        color="black"
-        open={isSlideToastOn}
-        onClose={slideToastClose}
-      />
-      <PositionedToastDemo
-        width={300}
-        description="This Toast is positioned."
-        color="blue"
-        open={isPositionedToastOn}
-        onClose={positionedToastClose}
-      />
-    </div>
+    <section css={layout}>
+      <div css={feature}>
+        <button css={button} onClick={slideToastOpen}>
+          slideToast
+        </button>
+        <button css={button} onClick={positionedToastOpen}>
+          positionedToast
+        </button>
+        <SlideToastDemo
+          width={200}
+          description="slide Toast!"
+          color="black"
+          open={isSlideToastOn}
+          onClose={slideToastClose}
+        />
+        <PositionedToastDemo
+          width={300}
+          description="This Toast is positioned."
+          color="blue"
+          open={isPositionedToastOn}
+          onClose={positionedToastClose}
+        />
+      </div>
+      <div css={description}></div>
+    </section>
   );
 };
 
