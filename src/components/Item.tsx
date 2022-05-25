@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Link } from "react-router-dom";
-import { subColor } from "../styled";
+import { subColor, lightColor } from "../styled";
 
 const container = css`
   width: 100%;
@@ -9,8 +9,16 @@ const container = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${subColor};
-  border: 1px solid black;
+  border: 1px solid ${lightColor};
+  :hover {
+    span {
+      background-color: ${lightColor};
+    }
+  }
+`;
+const text = css`
+  padding: 5px;
+  border-radius: 10px;
 `;
 
 interface ItemProps {
@@ -20,7 +28,9 @@ interface ItemProps {
 const Item = ({ feature }: ItemProps) => {
   return (
     <Link to={`${feature}`} style={{ textDecoration: "none" }}>
-      <div css={container}>{feature}</div>
+      <div css={container}>
+        <span css={text}>{feature}</span>
+      </div>
     </Link>
   );
 };

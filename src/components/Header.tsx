@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { mainColor } from "../styled";
+import { lightColor, mainColor } from "../styled";
 import { useNavigate } from "react-router-dom";
 
 const container = css`
   width: 100%;
-  height: 100px;
-  background-color: ${mainColor};
+  max-height: 100px;
+  border-bottom: 1px solid ${lightColor};
 `;
 
 const layout = css`
@@ -16,12 +16,18 @@ const layout = css`
   justify-content: space-between;
   padding: 10px;
   margin: 0 50px;
-  background-color: red;
   box-sizing: border-box;
 `;
 
 const leftBox = css`
   display: flex;
+`;
+
+const logo = css`
+  width: 100px;
+  height: 100%;
+  margin: 0 20px;
+  object-fit: cover;
 `;
 
 const menuBox = css`
@@ -37,9 +43,15 @@ const menu = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
   box-sizing: border-box;
   list-style: none;
+  cursor: pointer;
+  :hover {
+    background-color: ${lightColor};
+  }
 `;
 
 const rightBox = css`
@@ -52,6 +64,9 @@ const Header = () => {
   const goToDocs = () => {
     navigate("/docs");
   };
+  const goToFeatures = () => {
+    navigate("/feature/intro");
+  };
   const goToAboutJoseph = () => {
     navigate("/about");
   };
@@ -61,14 +76,17 @@ const Header = () => {
       <section css={layout}>
         <div css={leftBox}>
           <a href="/">
-            <div>Joseph's design</div>
+            <img alt="logo" src="/assets/logo.png" css={logo} />
           </a>
           <ul css={menuBox}>
             <li css={menu} onClick={goToDocs}>
               Docs
             </li>
+            <li css={menu} onClick={goToFeatures}>
+              Features
+            </li>
             <li css={menu} onClick={goToAboutJoseph}>
-              About joseph
+              About
             </li>
           </ul>
         </div>

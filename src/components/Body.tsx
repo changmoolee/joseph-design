@@ -5,8 +5,9 @@ import Nav from "./Nav";
 
 const container = css`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  box-sizing: border-box;
 `;
 
 const Body = () => {
