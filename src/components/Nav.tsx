@@ -17,6 +17,7 @@ const features = [
   "drawer",
   "toast",
   "skeletonui",
+  "transferlist",
 ];
 
 const Nav = () => {
