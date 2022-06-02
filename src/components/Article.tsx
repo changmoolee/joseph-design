@@ -11,6 +11,7 @@ import ToggleDescription from "../features/Toggle/ToggleDescription";
 import ToastDescription from "../features/Toast/ToastDescription";
 import SkeletonUIDescription from "../features/SkeletonUI/SkeletonUIDescription";
 import FeatureIntro from "../features/FeatureIntro";
+import TransferListDescription from "../features/TransferList/TransferListDescription";
 
 const container = css`
   display: flex;
@@ -32,6 +33,7 @@ const Article = () => {
         <Route path="/drawer" element={<DrawerDescription />} />
         <Route path="/toast" element={<ToastDescription />} />
         <Route path="/skeletonui" element={<SkeletonUIDescription />} />
+        <Route path="/transferlist" element={<TransferListDescription />} />
       </Routes>
     </div>
   );
