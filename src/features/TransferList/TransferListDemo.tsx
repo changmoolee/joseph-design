@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { useState } from "react";
-import { lightColor } from "../../styled";
+import { lightColor, subColor } from "../../styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +19,6 @@ const card = css`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
   background-color: white;
 `;
 
@@ -30,6 +29,7 @@ const cardHeader = css`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-bottom: 0;
   font-size: 24px;
   font-weight: 600;
 `;
@@ -40,6 +40,7 @@ const itemlist = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid black;
   overflow: auto;
 `;
 
@@ -75,19 +76,24 @@ const buttonlist = css`
   align-items: center;
 `;
 
-const button = css`
-  width: 50px;
-  height: 50px;
-  padding: none;
-  border: none;
-  cursor: pointer;
-  :hover {
-    background-color: gray;
-  }
-  :active {
-    background-color: gray;
-  }
-`;
+const button = () => {
+  return css`
+    width: 50px;
+    height: 50px;
+    padding: none;
+    border: none;
+    border-radius: 5px;
+    background-color: ${subColor};
+    cursor: pointer;
+    opacity: 0.5;
+    :hover {
+      opacity: 1;
+    }
+    :active {
+      opacity: 1;
+    }
+  `;
+};
 
 type TransferListProps = {
   leftTitle: string | null;
@@ -172,8 +178,6 @@ const TransferListDemo = ({
   };
 
   const Item = ({ item, index, setCheckedArr }: ItemProps) => {
-    const uniqueId = Math.floor(Math.random() * 10000);
-
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       const { checked } = event.target;
 
@@ -191,10 +195,10 @@ const TransferListDemo = ({
     };
 
     return (
-      <label css={itemContainer} htmlFor={`item${uniqueId}`}>
+      <label css={itemContainer} htmlFor={`${item}`}>
         <input
           css={checkbox}
-          id={`item${uniqueId}`}
+          id={`${item}`}
           type="checkbox"
           onChange={onChange}
         />
@@ -210,7 +214,7 @@ const TransferListDemo = ({
         <div css={itemlist}>
           {left.map((item, index) => (
             <Item
-              key={index}
+              key={item}
               item={item}
               index={index}
               setCheckedArr={setLeftChecked}
@@ -237,7 +241,7 @@ const TransferListDemo = ({
         <div css={itemlist}>
           {right.map((item, index) => (
             <Item
-              key={index}
+              key={item}
               item={item}
               index={index}
               setCheckedArr={setRightChecked}

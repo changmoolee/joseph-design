@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import { debounce } from "lodash";
 
 const container = css`
   position: relative;
@@ -43,21 +44,40 @@ const suggestion = css`
     background-color: rgba(0, 0, 0, 0.3);
   }
 `;
+
+const iconBox = css`
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 100;
+`;
+
 type AutoCompleteProps = {
   items: string[];
 };
 
 const AutoCompleteDemo = ({ items }: AutoCompleteProps) => {
   const [inputValue, setInputValue] = useState<string>("");
+  const [filtered, setFilterd] = useState<Array<string>>([]);
 
-  const filtered = items.filter((item) => item.includes(inputValue));
+  const filtering = debounce((value) => {
+    setFilterd(
+      items.filter((item) =>
+        item.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+      )
+    );
+  }, 500);
 
-  const handleChange = (event: any) => {
-    setInputValue(event.target.value);
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+
+    setInputValue(value);
+    filtering(value);
   };
+
   const handleClose = () => {
     setInputValue("");
   };
+
   const handleValue = (text: string) => {
     setInputValue(text);
   };
@@ -67,14 +87,12 @@ const AutoCompleteDemo = ({ items }: AutoCompleteProps) => {
       <div css={inputContainer}>
         <input
           value={inputValue}
-          onChange={(e) => handleChange(e)}
+          onChange={handleChange}
           placeholder="Please search here."
         />
-        <FontAwesomeIcon
-          icon={faX}
-          style={{ cursor: "pointer", zIndex: "100" }}
-          onClick={handleClose}
-        />
+        <span css={iconBox} onClick={handleClose}>
+          <FontAwesomeIcon icon={faX} />
+        </span>
       </div>
       {inputValue && (
         <section css={suggestions}>
