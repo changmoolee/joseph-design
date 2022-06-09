@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { useState } from "react";
-import { lightColor } from "../../styled";
+import { darkColor, lightColor } from "../../styled";
 import { DrawerProps } from "./DrawerDescription";
 
 const button = css`
@@ -10,6 +10,9 @@ const button = css`
   border: none;
   color: white;
   background-color: ${lightColor};
+  :hover {
+    background-color: ${darkColor};
+  }
 `;
 
 const drawer = (isDrawerOn: boolean, height?: number) => css`
