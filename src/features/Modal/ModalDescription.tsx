@@ -27,6 +27,10 @@ const style = {
   `,
 };
 
+const affordance = css`
+  margin: 30px;
+`;
+
 const ModalDescription = () => {
   /* 모달 기능을 사용하기 위해서는, 아래 내용을 충족해야 합니다. */
   const [isOpen, setIsOpen] = useState(false);
@@ -50,20 +54,30 @@ const ModalDescription = () => {
         <button css={style.button} onClick={handleOpen}>
           modal
         </button>
+        <span css={affordance}>왼쪽의 버튼을 클릭해보세요!</span>
       </div>
       <div css={description}>
-        <h1>Modal</h1>
-        <h4>모달 기능을 사용하기 위해서는, 아래 내용을 충족해야 합니다.</h4>
-        <br />
-        1.boolean값을 가진 state를 만들어 줘야 합니다. <br />
-        2. Modal을 소거하는 상황을 위해 false값으로 바꿔주는 handler를
-        작성해줘야 합니다. <br />
-        3. Modal을 생성하기 위해 true값으로 바꿔주는 handler를 작성해줘야
-        합니다.
-        <br />
-        ModalDemo에 props로 open, onClose 두 가지를 내려줘야 합니다. <br />
-        open에는 Modal 구현 유무를 결정하는 boolean 상태값을, onClose에는
-        state를 false로 만들어주는 핸들러를 내려줘 합니다.
+        <h3>Modal</h3>
+        <strong>
+          모달 기능을 사용하기 위해서는, 아래 내용을 충족해야 합니다.
+        </strong>
+        <p>
+          1. boolean값을 가진 state를 만들어 줘야 합니다. <br />
+          <br />
+          2. Modal을 소거하는 상황을 위해 false값으로 바꿔주는 handler를
+          작성해줘야 합니다. <br />
+          <br />
+          3. Modal을 생성하기 위해 true값으로 바꿔주는 handler를 작성해줘야
+          합니다.
+          <br />
+          <br />
+          4. ModalDemo에 props로 <code>open</code>, <code>onClose</code> 두
+          가지를 내려줘야 합니다. <br />
+          <br />
+          5. <code>open</code>에는 Modal 구현 유무를 결정하는 boolean 상태값을,
+          <code>onClose</code>에는 state를 false로 만들어주는 핸들러를 내려줘야
+          합니다.
+        </p>
       </div>
     </section>
   );
