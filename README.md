@@ -52,18 +52,18 @@ props는 총 3개로 <code>title[문자열]</code>, <code>dropDownItems</code>[�
 ### Drawer 기능
 ![Drawer](https://user-images.githubusercontent.com/84559872/168035517-eaf83662-58c2-4fa1-900a-b35531c0eab6.gif)<br>
 뱡향 이름을 가진 버튼을 누르면, 해당 방향에서 Drawer가 구현됩니다.<br><br>
-props로 title[문자열], height[숫자], width[숫자]가 있습니다.<br>
-title은 버튼의 이름을 수정할 수 있고, height, width은 높이 및 넒이를 px단위로 지정할 수 있습니다.<br>
-또한, 해당 Drawer 내에 자식 컴포넌트를 내려 줄 수 있는 children이 존재합니다.<br>
+props로 <code>title</code>[문자열], <code>height</code>[숫자], <code>width</code>[숫자]가 있습니다.<br>
+<code>title</code>은 버튼의 이름을 수정할 수 있고, <code>height</code>, <code>width</code>은 높이 및 넒이를 px단위로 지정할 수 있습니다.<br>
+또한, 해당 Drawer 내에 자식 컴포넌트를 내려 줄 수 있는 <code>children</code>이 존재합니다.<br>
 Drawer에 나올 컨텐츠를 직접 제작하여 자식컴포넌트로 넣어줄 수 있습니다.<br><br>
 ### Toast 기능
 ![Toast](https://user-images.githubusercontent.com/84559872/168588538-9b711b55-dc8e-498c-84ca-2907b21ec410.gif)<br>
 slideToast 버튼을 누르면, 우측 아래에서 Toast가 미끄러지면서 구현됩니다.<br>
 positionedToast 버튼을 누르면, 중앙 아래 부분에서 Toast가 구현됩니다.<br><br>
-props로 description[문자열], color[문자열], width[숫자], open[state], onClose[setState]가 존재합니다.<br>
-description는 Toast의 내용을 수정할 수 있고, color는 Toast의 색을, width는 Toast의 크기를 조절할 수 있습니다.<br>
-해당 Toast 기능을 이용하기 위해서는 open props에 Toast 구현 유무를 정하는 boolean 상태값을,<br>
-onClose에는 해당 Toast를 소거할 setState(false)를 내려주어야 합니다.<br><br>
+props로 <code>description</code>[문자열], <code>color</code>[문자열], <code>width</code>[숫자], <code>open</code>[state], <code>onClose</code>[setState]가 존재합니다.<br>
+<code>description</code>는 Toast의 내용을 수정할 수 있고, <code>color</code>는 Toast의 색을, <code>width</code>는 Toast의 크기를 조절할 수 있습니다.<br>
+해당 Toast 기능을 이용하기 위해서는 <code>open</code> props에 Toast 구현 유무를 정하는 boolean 상태값을,<br>
+<code>onClose</code>에는 해당 Toast를 소거할 <code>setState(false)</code>를 내려주어야 합니다.<br><br>
 ### SkeletonUI 기능
 ![SkeletonUI](https://user-images.githubusercontent.com/84559872/168712002-0abd2fb6-f52b-4777-9085-21aad059e786.gif)<br>
 원하는 크기의 엘리먼트를 작성하여 자식 컴포넌트로 넣어주면, 해당 크기에 맞춰 스켈레톤UI 효과가 구현됩니다.<br>
@@ -71,4 +71,4 @@ onClose에는 해당 Toast를 소거할 setState(false)를 내려주어야 합�
 ![Transferlist](https://user-images.githubusercontent.com/84559872/171579101-6ff94ebe-e9dd-4f7b-b2a1-8c98dd366d35.gif)<br>
 각각의 itemlist를 작성하고, check를 할 수 있습니다.<br>
 checked된 item들을 원하는 Card로 이동시킬 수 있습니다.<br><br>
-props로 itemlist의 title을 수정할 수 있는 leftTitle, rightTitle가 있습니다.<br> 또한, item들의 개수와 이름을 정할 수 있는 배열 leftItemlist, rightItemlist가 존재합니다.
+props로 itemlist의 title을 수정할 수 있는 <code>leftTitle</code>, <code>rightTitle</code>가 있습니다.<br> 또한, item들의 개수와 이름을 정할 수 있는 배열 <code>leftItemlist</code>, <code>rightItemlist</code>가 존재합니다.
