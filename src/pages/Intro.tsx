@@ -11,14 +11,13 @@ const container = css`
   flex-direction: column;
 `;
 
-/////////////////
 const box = css`
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+  padding: 100px;
   box-sizing: border-box;
 `;
 

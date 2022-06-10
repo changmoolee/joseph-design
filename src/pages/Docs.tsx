@@ -15,7 +15,7 @@ const box = css`
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 100px;
   box-sizing: border-box;
 `;
 

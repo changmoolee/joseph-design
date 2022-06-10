@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { lightColor, mainColor } from "../styled";
+import { lightColor } from "../styled";
 import { useNavigate } from "react-router-dom";
 
 const container = css`
@@ -14,8 +14,7 @@ const layout = css`
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin: 0 50px;
+  padding: 10px 100px;
   box-sizing: border-box;
 `;
 
@@ -34,8 +33,9 @@ const menuBox = css`
   height: 100%;
   display: flex;
   align-items: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  margin-left: 100px;
 `;
 
 const menu = css`

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { useState } from "react";
-import { lightColor, subColor } from "../../styled";
+import { lightColor } from "../../styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
@@ -83,7 +83,7 @@ const button = () => {
     padding: none;
     border: none;
     border-radius: 5px;
-    background-color: ${subColor};
+    background-color: ${lightColor};
     cursor: pointer;
     opacity: 0.5;
     :hover {
