@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Link } from "react-router-dom";
-import { subColor, lightColor } from "../styled";
+import { lightColor } from "../styled";
 
 const container = css`
   width: 100%;
@@ -9,7 +9,7 @@ const container = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${lightColor};
+  border-bottom: 1px solid ${lightColor};
   :hover {
     span {
       background-color: ${lightColor};
