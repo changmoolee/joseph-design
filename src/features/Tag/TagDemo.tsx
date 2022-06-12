@@ -14,10 +14,13 @@ const box = css`
   border: 1px solid black;
   border-radius: 20px;
   box-sizing: border-box;
+  overflow-x: overlay;
+  overflow-y: hidden;
 `;
 
 const input = css`
   width: 100%;
+  min-width: 150px;
   height: 100%;
   border: none;
   ::placeholder {

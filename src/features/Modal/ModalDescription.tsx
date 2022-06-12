@@ -59,7 +59,7 @@ const ModalDescription = () => {
       <div css={description}>
         <h3>Modal</h3>
         <strong>
-          모달 기능을 사용하기 위해서는, 아래 내용을 충족해야 합니다.
+          Modal 기능을 사용하기 위해서는, 아래 내용을 충족해야 합니다.
         </strong>
         <p>
           1. boolean값을 가진 state를 만들어 줘야 합니다. <br />
