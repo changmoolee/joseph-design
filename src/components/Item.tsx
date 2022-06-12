@@ -21,15 +21,24 @@ const text = css`
   border-radius: 10px;
 `;
 
+const linkStyle = css`
+  text-decoration: none;
+  :link {
+    color: black;
+  }
+  :visited {
+    color: black;
+  }
+`;
 interface ItemProps {
   feature: string;
 }
 
 const Item = ({ feature }: ItemProps) => {
   return (
-    <Link to={`${feature}`} style={{ textDecoration: "none" }}>
+    <Link to={`${feature}`} css={linkStyle}>
       <div css={container}>
-        <span css={text}>{feature}</span>
+        <span css={text}>{feature.toUpperCase()}</span>
       </div>
     </Link>
   );
