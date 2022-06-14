@@ -16,6 +16,9 @@ https://joseph-design.netlify.app/
 4. npm start 명령어를 입력하여 실행합니다.
 <pre><code>npm start</code></pre><br><br>
 
+## 배포된 라이브러리 설치 명령어
+<pre><code>npm install joseph-design-system-beta</code></pre><br>
+
 ## 기능
 ### Modal 기능<br>
 ![image](https://user-images.githubusercontent.com/84559872/166252766-4af5bcde-84df-4375-820a-ea4ceae11d10.png)<br>
