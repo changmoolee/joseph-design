@@ -8,7 +8,6 @@ const container = css`
   display: flex;
   flex-direction: column;
 `;
-/////////////////////
 
 const box = css`
   width: 100%;
@@ -39,13 +38,24 @@ const Docs = () => {
     <div css={container}>
       <Header />
       <div css={box}>
-        <div css={title}>사용하기 전 설치가 필요합니다.</div>
+        <div css={title}>JDS의 UI는... </div>
         <div css={description}>
-          설치 후, Joseph의 기능들을 사용할 수 있습니다.
+          React 환경 아래에서 작동합니다. React 라이브러리를 먼저 설치해 주세요!
         </div>
-        <div css={subTitle}>npm</div>
+        <br />
+        <br />
+        <div css={subTitle}>npm install</div>
+        <br />
         <div css={description}>
-          기능들을 사용하기 위해서는 npm 설치 과정이 필요합니다.
+          JDS 라이브러리는 npm package로 이용 가능합니다. <br />
+          <br />
+          JDS의 UI들을 사용하기 위해서는, npm 설치 과정이 필요합니다.
+          <br />
+          <br />
+          <code>npm install joseph-design-system-beta</code>
+        </div>
+        <div css={description}>
+          위 명령어를 입력하여 설치 후, Joseph의 기능들을 사용할 수 있습니다.
         </div>
       </div>
     </div>

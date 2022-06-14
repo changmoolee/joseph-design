@@ -58,8 +58,13 @@ const Intro = () => {
       <div css={box}>
         <div css={title}>Joseph의</div>
         <div css={title}>design-system</div>
+        <br />
+        <br />
         <div css={description}>
-          각종 UI 기능들을 빠르게 사용하실 수 있습니다.
+          JDS는 React 컴포넌트 라이브러리로서,
+          <br />
+          <br />
+          각종 UI 기능들을 빠르고 편리하게 사용하실 수 있습니다.
         </div>
         <button css={button} onClick={goToDocs}>
           시작하기
