@@ -1,4 +1,4 @@
-# joseph-design
+# joseph-design(아직 미완성입니다.)
 
 ## 배포 url
 https://joseph-design.netlify.app/
