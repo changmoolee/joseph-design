@@ -4,8 +4,6 @@ import TabsDemo from "./TabsDemo";
 import { layout, feature, description } from "../../styled";
 
 const affordance = css`
-  width: 400px;
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
