@@ -1,12 +1,22 @@
-# joseph-design-storybook
+# joseph-design(아직 미완성입니다.)
 
 ## 배포 url
 
-https://jds-storybook.netlify.app
+https://joseph-design.netlify.app/
 
 ## 개요
 
-storybook을 통해 jds의 UI들을 확인할 수 있습니다.
+## 자세한 실행 방법
+
+<br>
+1. git clone 명령어를 통해 로컬에 git 저장소를 복제합니다.
+<pre><code>git clone https://github.com/changmoolee/joseph-design.git</code></pre><br>
+2. 다운 받은 폴더로 이동합니다.
+<pre><code>cd joseph-design</code></pre><br>
+3. npm install 명령어를 입력하여 모듈들을 다운로드합니다.
+<pre><code>npm install</code></pre><br>
+4. npm start 명령어를 입력하여 실행합니다.
+<pre><code>npm start</code></pre><br><br>
 
 ## 배포된 라이브러리 설치 명령어
 
